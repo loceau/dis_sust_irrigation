@@ -16,7 +16,9 @@ There is no single master script. Instead, users should follow the numbered stru
 
 
 ### Raw data
-We use publicly available data sourced from the World Bank’s Open Data portal, the Food and Agriculture Organization of the United Nations (FAO) Statistical Database, the Organisation for Economic Co-operation and Development (OECD) Creditor Reporting System (CRS), and AidData. The specific raw data files used in this study are included in the corresponding `data/in` folders within each subdirectory.
+We use publicly available data sourced from the World Bank’s Open Data portal, the Food and Agriculture Organization of the United Nations (FAO) Statistical Database, the Organisation for Economic Co-operation and Development (OECD) Creditor Reporting System (CRS), and AidData.
+
+The specific raw data files used in this study are included in the corresponding `data/in` folders within each subdirectory, with the exception of the CRS dataset. Due to size limitations, the raw CRS dataset used in this study could not be uploaded to this repository. Please refer to the `README` file in the corresponding CRS folder for instructions on how to access and prepare this dataset.
 
 To the best of our knowledge, all datasets are provided under terms that allow redistribution for academic and non-commercial purposes. Please refer to the respective data providers for full terms of use:
 
