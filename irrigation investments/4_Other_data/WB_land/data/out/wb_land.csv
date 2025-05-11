@@ -1,0 +1,225 @@
+country_name,land_area_km2,ag_land_km2
+Aruba,0,0
+Afghanistan,.652,.383
+Angola,1.247,.459
+Albania,.027,.011
+Andorra,0,0
+Arab World,13.101,5.236
+United Arab Emirates,.071,.004
+Argentina,2.737,1.18
+Armenia,.028,.017
+American Samoa,0,0
+Antigua and Barbuda,0,0
+Australia,7.692,3.635
+Austria,.083,.026
+Azerbaijan,.083,.048
+Burundi,.026,.021
+Belgium,.03,.014
+Benin,.113,.04
+Burkina Faso,.274,.127
+Bangladesh,.13,.101
+Bulgaria,.109,.05
+Bahrain,.001,0
+"Bahamas, The",.01,0
+Bosnia and Herzegovina,.051,.023
+Belarus,.203,.082
+Belize,.023,.002
+Bermuda,0,0
+Bolivia,1.083,.381
+Brazil,8.358000000000001,2.394
+Barbados,0,0
+Brunei Darussalam,.005,0
+Bhutan,.038,.005
+Botswana,.5670000000000001,.259
+Central African Republic,.623,.049
+Canada,8.789,.5700000000000001
+Switzerland,.04,.015
+Channel Islands,0,0
+Chile,.744,.106
+China,9.388,5.207
+Cote d'Ivoire,.318,.235
+Cameroon,.473,.098
+"Congo, Dem. Rep.",2.267,.339
+"Congo, Rep.",.342,.107
+Colombia,1.11,.427
+Comoros,.002,.001
+Cabo Verde,.004,.001
+Costa Rica,.051,.018
+Caribbean small states,.405,.019
+Cuba,.104,.064
+Curacao,0,
+Cayman Islands,0,0
+Cyprus,.009,.001
+Czechia,.077,.035
+Germany,.349,.166
+Djibouti,.023,.017
+Dominica,.001,0
+Denmark,.04,.026
+Dominican Republic,.048,.024
+Algeria,2.382,.413
+Ecuador,.248,.055
+"Egypt, Arab Rep.",.995,.04
+Euro area,2.68,1.146
+Eritrea,.121,.076
+Spain,.5,.262
+Estonia,.043,.01
+Ethiopia,1.129,.386
+Finland,.304,.023
+Fiji,.018,.003
+France,.548,.286
+Faroe Islands,.001,.001
+"Micronesia, Fed. Sts.",.001,0
+Gabon,.258,.022
+United Kingdom,.242,.172
+Georgia,.069,.024
+Ghana,.228,.126
+Gibraltar,0,
+Guinea,.246,.146
+"Gambia, The",.01,.006
+Guinea-Bissau,.028,.008
+Equatorial Guinea,.028,.001
+Greece,.129,.059
+Grenada,0,0
+Greenland,.41,.002
+Guatemala,.107,.046
+Guam,.001,0
+Guyana,.197,.01
+"Hong Kong SAR, China",.001,0
+Honduras,.112,.036
+Croatia,.056,.015
+Haiti,.028,.018
+Hungary,.091,.05
+Indonesia,1.893,.646
+Isle of Man,.001,0
+India,2.973,1.785
+Ireland,.069,.043
+"Iran, Islamic Rep.",1.623,.471
+Iraq,.434,.094
+Iceland,.101,.019
+Israel,.022,.006
+Italy,.296,.124
+Jamaica,.011,.004
+Jordan,.089,.01
+Japan,.365,.047
+Kazakhstan,2.7,2.138
+Kenya,.5690000000000001,.277
+Kyrgyz Republic,.192,.104
+Cambodia,.177,.061
+Kiribati,.001,0
+St. Kitts and Nevis,0,0
+"Korea, Rep.",.098,.016
+Kuwait,.018,.002
+Lao PDR,.231,.02
+Lebanon,.01,.007
+Liberia,.096,.019
+Libya,1.76,.154
+St. Lucia,.001,0
+Liechtenstein,0,0
+Sri Lanka,.062,.028
+Lesotho,.03,.024
+Lithuania,.063,.029
+Luxembourg,.003,.001
+Latvia,.062,.02
+"Macao SAR, China",0,
+St. Martin (French part),0,
+Morocco,.446,.303
+Monaco,0,
+Moldova,.033,.023
+Madagascar,.582,.409
+Maldives,0,0
+Mexico,1.944,.971
+Marshall Islands,0,0
+Middle income,78.884,29.124
+North Macedonia,.025,.013
+Mali,1.22,.431
+Malta,0,0
+Myanmar,.653,.13
+Montenegro,.013,.003
+Mongolia,1.558,1.126
+Northern Mariana Islands,0,0
+Mozambique,.786,.414
+Mauritania,1.031,.397
+Mauritius,.002,.001
+Malawi,.094,.061
+Malaysia,.329,.086
+North America,17.936,4.628
+Namibia,.8230000000000001,.388
+New Caledonia,.018,.002
+Niger,1.267,.466
+Nigeria,.911,.6860000000000001
+Nicaragua,.12,.051
+Netherlands,.034,.018
+Norway,.364,.01
+Nepal,.143,.041
+Nauru,0,0
+New Zealand,.263,.102
+Oman,.31,.015
+Pakistan,.771,.363
+Panama,.074,.022
+Peru,1.28,.255
+Philippines,.298,.127
+Palau,0,0
+Papua New Guinea,.453,.014
+Poland,.306,.145
+Puerto Rico,.009,.002
+"Korea, Dem. People's Rep.",.12,.026
+Portugal,.092,.04
+Paraguay,.397,.168
+West Bank and Gaza,.006,.004
+French Polynesia,.003,0
+Qatar,.011,.001
+Romania,.23,.131
+Russian Federation,16.377,2.155
+Rwanda,.025,.02
+South Asia,4.77,2.707
+Saudi Arabia,2.15,1.736
+Sudan,1.868,1.127
+Senegal,.193,.095
+Singapore,.001,0
+Solomon Islands,.028,.001
+Sierra Leone,.072,.039
+El Salvador,.021,.012
+San Marino,0,0
+Somalia,.627,.441
+Serbia,.084,.035
+South Sudan,.632,.283
+Sao Tome and Principe,.001,0
+Suriname,.156,.001
+Slovak Republic,.048,.019
+Slovenia,.02,.006
+Sweden,.407,.03
+Eswatini,.017,.012
+Sint Maarten (Dutch part),0,
+Seychelles,0,0
+Syrian Arab Republic,.184,.139
+Turks and Caicos Islands,.001,0
+Chad,1.259,.503
+Togo,.054,.038
+Thailand,.511,.235
+Tajikistan,.139,.049
+Turkmenistan,.47,.338
+Timor-Leste,.015,.003
+Tonga,.001,0
+Trinidad and Tobago,.005,.001
+Tunisia,.155,.097
+Turkiye,.77,.381
+Tuvalu,0,0
+Tanzania,.886,.395
+Uganda,.201,.144
+Ukraine,.579,.413
+Uruguay,.175,.141
+United States,9.147,4.058
+Uzbekistan,.441,.257
+St. Vincent and the Grenadines,0,0
+"Venezuela, RB",.882,.215
+British Virgin Islands,0,0
+Virgin Islands (U.S.),0,0
+Vietnam,.313,.124
+Vanuatu,.012,.002
+World,129.778,47.812
+Samoa,.003,0
+Kosovo,,
+"Yemen, Rep.",.528,.235
+South Africa,1.213,.963
+Zambia,.743,.238
+Zimbabwe,.387,.162

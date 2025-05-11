@@ -1,0 +1,283 @@
+---
+title: "Figure 3a"
+output: html_notebook
+---
+
+```{r}
+# Load required packages
+library(ggplot2)
+library(dplyr)
+library(haven)
+library(viridis)
+library(remotes)
+library(ggchicklet) # remotes::install_bitbucket("hrbrmstr/ggchicklet")
+library(gridExtra)
+library(gtable)
+library(ggpubr)
+library(grid)
+```
+
+
+```{r}
+# Loading data
+chapter1_outcomes <- read_dta("~/Users/cesaraugusto/Desktop/impact evaluations/2_IE_analysis/data/out/chapter1_onlyCAL_rawData_Outcomes_10052023.dta")
+str(chapter1_outcomes)                                  # tibble, we want a data frame
+chapter1_outcomes <- as.data.frame(chapter1_outcomes)
+str(chapter1_outcomes)    
+
+
+    # Data cleaning/organizing
+
+        # Define ordering of the outcome groups
+        outcome_position <- c("Income", "Production", "Expenditures", "Food security", "Land use", "Wealth & assets", 
+                              "Market access & sales", "Irrigated land", "Poverty", "Employment", "Social development",
+                              "Urbanization", "Health", "Environmental", "Miscellaneous")
+
+        
+        # Define ordering of method and region
+        method_position <- c("ERM", "RD", "HTS", "OLS", "IV", "FE", "ESR", "DiD", "Weighting", "Matching")
+        region_position <- c("CA", "EAP", "LAC", "SA", "SSA")
+
+        
+        # Converting variables to factor with our established levels
+        chapter1_outcomes$method <- factor(chapter1_outcomes$method, levels = method_position)
+        chapter1_outcomes$region <- factor(chapter1_outcomes$region, levels = region_position)
+        
+        
+        # Define color palette for method and region
+        method_colors <- c("ERM" = "#001219", "RD" = "#005f73", "HTS" = "#0a9396", "OLS" = "#94d2bd", "IV" = "#e9d8a6", "FE" = "#ee9b00", "ESR" = "#ca6702", "DiD" = "#bb3e03", "Weighting" = "#ae2012", "Matching" = "#9b2226")
+        region_colors <- c("CA" = "#a9d6e5", "EAP" = "#89c2d9", "LAC" = "#468faf", "SA" = "#2a6f97", "SSA" = "#013a63")
+        
+        
+        
+    # FIGURES
+        
+        # Studies by method -- no legend
+        
+            # Combined (program & impact evaluations)
+            p1 <- chapter1_outcomes %>% 
+                count(outcome_group, method) %>% 
+                ggplot() +
+                geom_col(mapping = aes(x = outcome_group, y = n, fill = method), colour="black", size=0.05) +
+                scale_fill_manual(values = method_colors) +  # Assign method colors manually
+                coord_flip() +
+                theme_minimal() +
+                theme(
+                    legend.position = "none",
+                    panel.grid = element_blank(),
+                    axis.text.x = element_text(color = "black", size=12),
+                    axis.text.y = element_text(color = "black", size=14),
+                    axis.title.x = element_text(size = 14),             # X-axis title's font size
+                    legend.key.size = unit(6, 'mm'),
+                    plot.title = element_text(hjust = -0.65, size = 16, face = "bold"),
+                    panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+                    plot.margin = unit(c(0, 0.3, 0, 0), "cm")) +    # Adjust margins as needed    
+                geom_vline(xintercept = 0.4, color = "black", size = 0.5) +
+                labs(x = "", y = "Studies", title = "c") +
+                expand_limits(y = 60) +                                 # Set the y-axis limits to ensure 60 is displayed
+                scale_x_discrete(limits = rev(outcome_position)) +
+                scale_y_reverse(expand = c(0, 0))
+
+            # Combined (program & impact evaluations)
+            p2 <- chapter1_outcomes %>% 
+                count(outcome_group, region) %>% 
+                ggplot() +
+                geom_col(mapping = aes(x = outcome_group, y = n, fill = region), colour="black", size=0.05) +
+                scale_fill_manual(values = region_colors) +  # Assign region colors manually
+                coord_flip() +
+                theme_minimal() +
+                theme(
+                    legend.position = "none",
+                    axis.text.y = element_blank(),
+                    axis.title.y = element_blank(),
+                    panel.grid = element_blank(),
+                    axis.text.x = element_text(color = "black", size=12),
+                    axis.title.x = element_text(size = 14),             # X-axis title's font size
+                    legend.key.size = unit(6, 'mm'),
+                    plot.title = element_text(hjust = -0.65, size = 16, face = "bold", color = "white"),
+                    panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+                    plot.margin = unit(c(0, 0.3, 0, 0), "cm")) +  
+                geom_vline(xintercept = 0.4, color = "black", size = 0.5) +
+                labs(y = "Studies", title = "(c)") +
+                scale_x_discrete(limits = rev(outcome_position)) +
+                expand_limits(y = 60) +  # Set the y-axis limits
+                scale_y_continuous(expand = c(0, 0))  # Reduce space between figure and axes
+
+
+
+
+# Dummy data to extract the y-axis labels
+dummy_data <- chapter1_outcomes %>%
+    filter(irrig_program == 1) %>%
+    count(outcome_group, method)
+
+    # Create a plot with only y-axis labels
+    y_axis_labels_plot <- ggplot(dummy_data) +
+        geom_blank(aes(x = outcome_group, y = n)) +  # Blank geom to set up the plot
+        coord_flip() +
+        theme_minimal() +
+        theme(
+            axis.title = element_blank(),
+            axis.text.x = element_blank(),
+            axis.ticks.x = element_blank(),
+            axis.line.x = element_blank(),
+            panel.grid = element_blank(),
+            axis.text.y = element_text(color = "black", size=10),
+            plot.margin = unit(c(0.4, 0, 0.8, 1), "cm")) +
+        scale_x_discrete(limits = rev(outcome_position)) +
+        scale_y_continuous(expand = c(0, 0))
+    
+    # Display the y-axis labels plot
+    y_axis_labels_plot
+    
+
+# Plot1 - intervention & methods
+plot1 <- chapter1_outcomes %>%
+    filter(irrig_program == 1) %>%
+    count(outcome_group, method) %>% 
+    ggplot() +
+    geom_col(mapping = aes(x = outcome_group, y = n, fill = method), colour="black", size=0.05) +
+    scale_fill_manual(values = method_colors) +  # Assign method colors manually
+    coord_flip() +
+    theme_minimal() +
+    theme(
+        legend.position = "none",
+        axis.title = element_text(size = 10),
+        axis.text.y = element_blank(),
+        axis.title.y = element_blank(),
+        panel.grid = element_blank(),
+        axis.text.x = element_text(color = "black"),
+        legend.key.size = unit(6, 'mm'),
+        plot.title = element_text(hjust = -0.65, size = 0, face = "bold", color = "black"),
+        panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+        plot.margin = unit(c(0.3, 0, 0, 0), "cm")) +
+    geom_vline(xintercept = 0.4, color = "black", size = 0.5) +
+    labs(x = "", y = "Studies", title = "") +
+    expand_limits(y = 60) +  # Set the y-axis limits to ensure 60 is displayed
+    scale_x_discrete(limits = rev(outcome_position)) +
+    scale_y_reverse()
+
+
+# Plot 2 - intervention & regions
+plot2 <- chapter1_outcomes %>% 
+    filter(irrig_program == 1) %>%
+    count(outcome_group, region) %>% 
+    ggplot()+
+    geom_col(mapping = aes(x = outcome_group, y = n, fill = region), colour="black", size=0.05) +
+    scale_fill_manual(values = region_colors) +  # Assign method colors manually
+    coord_flip()+
+    theme_minimal()+
+    theme(
+        legend.position = "none",
+        axis.title = element_text(size = 10),
+        axis.text.y = element_blank(),
+        axis.title.y = element_blank(),
+        panel.grid = element_blank(),
+        axis.text.x = element_text(color = "black"),
+        legend.key.size = unit(6, 'mm'),
+        plot.title = element_text(hjust = -0.65, size = 0, face = "bold", color = "black"),
+        panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+        plot.margin = unit(c(0.3, 0, 0, 0), "cm")) +  
+    geom_vline(xintercept = 0.4, color = "black", size = 0.5) +
+    labs(y = "Studies", title = "") +
+    ylim(0, 60) + scale_x_discrete(limits = rev(outcome_position))
+
+
+
+# Plot 3 - No intervention & methods
+        plot3 <- chapter1_outcomes %>%
+            filter(irrig_program == 2) %>%
+            count(outcome_group, method) %>% 
+            ggplot() +
+            geom_col(mapping = aes(x = outcome_group, y = n, fill = method), colour="black", size=0.05) +
+            scale_fill_manual(values = method_colors) +  # Assign method colors manually
+            coord_flip() +
+            theme_minimal() +
+            theme(
+                legend.position = "none",
+                axis.title = element_text(size = 10),
+                axis.text.y = element_blank(),
+                axis.title.y = element_blank(),
+                panel.grid = element_blank(),
+                axis.text.x = element_text(color = "black"),
+                legend.key.size = unit(6, 'mm'),
+                plot.title = element_text(hjust = -0.65, size = 0, face = "bold", color = "black"),
+                panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+                plot.margin = unit(c(0.3, 0, 0, 0), "cm")) +
+            geom_vline(xintercept = 0.4, color = "black", size = 0.5) +
+            labs(x = "", y = "Studies", title = "") +
+            expand_limits(y = 60) +  # Set the y-axis limits to ensure 60 is displayed
+            scale_x_discrete(limits = rev(outcome_position)) +
+            scale_y_reverse()
+
+
+# Plot 4 - No intervention & regions
+plot4 <- chapter1_outcomes %>% 
+            filter(irrig_program == 2) %>%
+            count(outcome_group, region) %>% 
+            ggplot()+
+            geom_col(mapping = aes(x = outcome_group, y = n, fill = region), colour="black", size=0.05)+
+           scale_fill_manual(values = region_colors) +  # Assign method colors manually
+            coord_flip()+
+            theme_minimal()+
+            theme(
+                legend.position = "none",
+                axis.title = element_text(size = 10),
+                axis.text.y = element_blank(),
+                axis.title.y = element_blank(),
+                panel.grid = element_blank(),
+                axis.text.x = element_text(color = "black"),
+                legend.key.size = unit(6, 'mm'),
+                plot.title = element_text(hjust = -0.65, size = 0, face = "bold", color = "black"),
+                panel.border = element_rect(colour = "black", fill=NA, size=0.5),
+                plot.margin = unit(c(0.3, 0, 0, 0), "cm")) +  
+            geom_vline(xintercept = 0.4, color = "black", size = 0.5) +
+            labs(y = "Studies", title = "") +
+            ylim(0, 60) + scale_x_discrete(limits = rev(outcome_position))
+
+
+# Legends
+
+    # extract legend from p1 (from p1 + legend)
+    method_leg <- cowplot::get_legend(p1 +
+                                    theme(legend.position = "right",                # extract vertical legend
+                                          legend.justification = c(0.5,0.7),        # so legends  align
+                                          legend.title = element_text(size = 11, face = "bold"),   # Adjust title size
+                                          legend.text = element_text(size = 9),
+                                          legend.key.size = unit(5, 'mm')) +  # Adjust label size
+                                    labs(fill = "Method"))                          # title of legend
+    
+    # extract legend from p2 (from p2 + legend)
+    region_leg <- cowplot::get_legend(p2 + 
+                                    theme(legend.position = "right",                # extract vertical legend   
+                                          legend.justification = c(0,0.6),      # so legends  align
+                                          legend.title = element_text(size = 11, face = "bold"),   # Adjust title size
+                                          legend.text = element_text(size = 9),
+                                          legend.key.size = unit(5, 'mm')) +  # Adjust label size
+                                    labs(fill = "Region"))                          # title of legend
+
+
+plots_combined <- cowplot::plot_grid(y_axis_labels_plot, plot1, plot2, 
+                                     NULL,  # Spacer to add vertical space
+                                     plot3, plot4, 
+                                     NULL,  # Spacer to add vertical space
+                                     method_leg, 
+                                     region_leg, 
+                                     ncol = 9, 
+                                     rel_widths = c(0.9, 0.5, 0.5, 0.1, 0.5, 0.5, 0.06, 0.45, 0.35))
+
+
+# Create a base plot for adding text annotations
+annotated_plot <- cowplot::ggdraw() +
+    cowplot::draw_plot(plots_combined) +
+    cowplot::draw_text("a", x = 0.08, y = 1, hjust = -0.5, vjust = 0.8, size = 20, fontface = "bold") +
+    cowplot::draw_text("Program evaluation", x = 0.15, y = 1, hjust = -0.5, vjust = 1.1, size = 14, fontface = "bold") +
+    cowplot::draw_text("Impact evaluation", x = 0.455, y = 1, hjust = -0.5, vjust = 1.1, size = 14, fontface = "bold")
+
+# Display the annotated plot
+print(annotated_plot)
+
+
+```
+
+

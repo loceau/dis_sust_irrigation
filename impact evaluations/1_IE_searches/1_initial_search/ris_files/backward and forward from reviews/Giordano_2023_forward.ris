@@ -1,0 +1,184 @@
+TY  - JOUR
+TI  - Groundwater irrigation reduces overall poverty but increases socioeconomic vulnerability in a semiarid region of southern India
+AU  - Fischer, Chloé
+AU  - Aubron, Claire
+AU  - Trouvé, Aurélie
+AU  - Sekhar, Muddu
+AU  - Ruiz, Laurent
+T2  - Scientific Reports
+AB  - Abstract
+            The development of irrigation is generally considered an efficient way to reduce poverty in rural areas, although its impact on the inequality between farmers is more debated. In fact, assessing the impact of water management on different categories of farmers requires resituating it within the different dimensions of the local socio-technical context. We tested this hypothesis in a semi-arid area in Karnataka, South India, where groundwater irrigation was introduced five decades ago. Using the conceptual framework of comparative agriculture, based on farmers’ interviews, we built a farm typology, traced the trajectories of farm types over the last decades and assessed their current technical and economic performances. Our results show that the differentiation of farm trajectories since the 1950s has been linked with the development of groundwater irrigation, interplaying with their initial assets, and the evolution of the national and local contexts. We highlight the mechanisms by which irrigation indeed reduces poverty but engenders fragilities, particularly for poor households, whose situation was aggravated by the depletion of water resources over the last two decades. Finally, this extensive understanding of the agrarian context allowed us to formulate and assess the potential of different ways forward, including irrigation technology, change in cropping or livestock systems, land tenure, and value added distribution. As such, this analysis would be of major interest to policy makers involved in reforming the agricultural context for better agricultural water management.
+DA  - 2022/05/25/
+PY  - 2022
+DO  - 10.1038/s41598-022-12814-0
+DP  - DOI.org (Crossref)
+VL  - 12
+IS  - 1
+SP  - 8850
+J2  - Sci Rep
+LA  - en
+SN  - 2045-2322
+UR  - https://www.nature.com/articles/s41598-022-12814-0
+Y2  - 2023/05/10/05:58:08
+L1  - https://www.nature.com/articles/s41598-022-12814-0.pdf
+ER  - 
+
+TY  - JOUR
+TI  - Measuring the effect of improved irrigation technologies on irrigated agriculture. A study case in Central Chile
+AU  - Jordan, Cristian
+AU  - Donoso, Guillermo
+AU  - Speelman, Stijn
+T2  - Agricultural Water Management
+AB  - Irrigated agriculture is the primary sector demanding water resources in the world. Given that, improved irrigation technologies could play a crucial role in enhancing water use efficiency. This paper uses causal inference estimators to evaluate the effect of these technologies on irrigators at the farm level in two irrigated valleys in Central Chile. Doubly robust estimators were employed to address the selection bias of the adoption of improved irrigation technologies. The results show first a low level of technology adoption, with only 18% of irrigators adopting irrigation, where access to credits and education plays a crucial role in their adoption. Despite this low rate, the estimates show consistently positive and significant impacts on adopters in terms of annual margins and land use. As a result, our research calls for attention towards focusing programs and policy targeting on reducing entry barriers and broadening the adoption of irrigation technologies, allowing to reduce the gap in terms of economic wellbeing and the long-term sustainability and adaptation to climate change of irrigated areas.
+DA  - 2021/11//
+PY  - 2021
+DO  - 10.1016/j.agwat.2021.107160
+DP  - DOI.org (Crossref)
+VL  - 257
+SP  - 107160
+J2  - Agricultural Water Management
+LA  - en
+SN  - 03783774
+UR  - https://linkinghub.elsevier.com/retrieve/pii/S0378377421004376
+Y2  - 2023/05/10/05:58:20
+ER  - 
+
+TY  - JOUR
+TI  - Irrigation Increases Crop Species Diversity in Low-Diversity Farm Regions of Mexico
+AU  - LaFevor, Matthew C.
+AU  - Pitts, Aoife K.
+T2  - Agriculture
+AB  - Although agricultural intensification generally has homogenizing effects on landscapes that reduce crop diversity, the specific effects of different input strategies on crop diversity are unclear. This study examines the effects of irrigation inputs on crop species diversity in Mexico. We assess the richness and evenness diversity of 297 crop species across 2455 municipalities while controlling for environmental and socioeconomic factors and farm structural and functional characteristics. Using a quantile regression approach, we assess relationships across conditional quantiles of low-, medium-, and high-diversity farm regions. Results show irrigation level (% cropland irrigated) is a strong positive predictor of crop species richness and evenness diversity across all quantile regions. Moreover, the quantile effects of irrigation on evenness diversity are five times greater in low-diversity rather than high-diversity regions. With implications for agricultural water policy in Mexico, this study illustrates the potential benefits of sustainable irrigation expansion in water-rich but irrigation-poor farming regions. Specifically, by enhancing crop species diversity, carefully targeted irrigation expansion can support the transition to sustainable intensification.
+DA  - 2022/06/23/
+PY  - 2022
+DO  - 10.3390/agriculture12070911
+DP  - DOI.org (Crossref)
+VL  - 12
+IS  - 7
+SP  - 911
+J2  - Agriculture
+LA  - en
+SN  - 2077-0472
+UR  - https://www.mdpi.com/2077-0472/12/7/911
+Y2  - 2023/05/10/05:58:35
+L1  - https://www.mdpi.com/2077-0472/12/7/911/pdf?version=1656919332
+ER  - 
+
+TY  - JOUR
+TI  - A Novel Portable Soil Water Sensor Based on Temperature Compensation
+AU  - Tian, Hao
+AU  - Yu, Chongchong
+AU  - Xie, Tao
+AU  - Zheng, Tong
+AU  - Sun, Mei
+T2  - Journal of Sensors
+A2  - Palma, Alberto J.
+AB  - Soil water sensors based on the standing wave rate (SWR) principle are affected by temperature in long-term operation. To address this problem, a temperature compensation model based on the binary regression analysis method is proposed. The measurement results of the temperature-compensated standing wave rate (TCSWR) sensor at different temperatures and soil volumetric water content are analyzed, and the least-squares principle is used to identify the parameters to be determined in the compensation model for temperature for the SWR soil water sensor. A portable tapered TCSWR sensor with built-in temperature compensation model was developed on this basis. The calibration results show that the standing wave measurement circuit of the TCSWR sensor can effectively respond to changes in soil water, and the coefficient of the fitted equation exceeds 0.95. A comparison of the results before and after temperature compensation proves that compensation can significantly reduce the measurement error of the TCSWR sensor and improve the measurement accuracy. The static and dynamic characteristics of the TCSWR sensor show that the measurement range of the TCSWR sensor is7.50%-31.50%, the measurement accuracy is ±0.63%, the stability is good, the resolution is a minimum of 0.05%, and the dynamic response time is less than 1 s. The absolute error of the TCSWR sensor measurement is less than 1% in comparison with similar sensors, demonstrating that the measurement results of the TCSWR sensor are reliable.
+DA  - 2022/08/12/
+PY  - 2022
+DO  - 10.1155/2022/1061569
+DP  - DOI.org (Crossref)
+VL  - 2022
+SP  - 1
+EP  - 13
+J2  - Journal of Sensors
+LA  - en
+SN  - 1687-7268, 1687-725X
+UR  - https://www.hindawi.com/journals/js/2022/1061569/
+Y2  - 2023/05/10/05:58:50
+L1  - https://downloads.hindawi.com/journals/js/2022/1061569.pdf
+ER  - 
+
+TY  - BOOK
+TI  - Investing in agricultural water, sustainably
+AU  - Ghosh, E
+AB  - Climate change, poverty, inequality, and other disruptive factors are changing the way water is used for agriculture. Although IFI investments are only one of the tools that can be used to address food and agricultural water security, they can be a critical catalyst for change. A research study carried out by the Stockholm Environment Institute, under the direction of the FAO Investment Centre, examines IFI investments and financing mechanisms in agricultural water over the last decade (2010–2019) and identifies emerging goals, areas of investments and innovations. The study aims to provide IFIs and international development agencies insight into what has and has not worked in agricultural water investments, while offering promising new mechanisms and investment priorities for the future. The analysis focuses heavily on public investment as provided by IFIs, but also considers the role of private and public-private investment, and farmers as private investors and entrepreneurs. This publication is part of the Directions in Investment series under the FAO Investment Centre’s Knowledge for Investment (K4I) programme.
+DA  - 2022/08/16/
+PY  - 2022
+DP  - DOI.org (Crossref)
+LA  - en
+PB  - FAO
+SN  - 978-92-5-136704-9
+UR  - http://www.fao.org/documents/card/en/c/cc1212en
+Y2  - 2023/05/10/06:00:21
+ER  - 
+
+TY  - GEN
+TI  - MCC Burkina Faso—Agriculture Development Project
+AU  - Ksoll, C
+AU  - Moroz, Elena
+AU  - Turiansky, Abbie
+AU  - D’Agostino, Anthony
+AU  - Bambio, Y
+AU  - Roberge, D
+AU  - Blair, R
+AB  - Burkina Faso’s agriculture sector is critical to its economic health, but various challenges have kept it
+from being as productive as it could be. In response, the Millennium Challenge Corporation (MCC)
+invested in the Agriculture Development Project (ADP) as part of the US$ 482.5 million Burkina Faso
+Compact, which was implemented from 2009 to 2014 by the Millennium Challenge Account-Burkina
+Faso (MCA-BF), in partnership with the Government of Burkina Faso. The project’s objectives were to
+improve agricultural productivity, increase the incomes of farmers and livestock producers, and support
+economic development through an integrated set of activities comprising investments in water
+management and irrigation and in the livestock and agriculture value chains. The ADP was implemented
+in two areas of Burkina Faso, the Sourou Valley and the Comoé Basin. Its largest investment, at a cost of
+$89 million, was the construction of an irrigated perimeter (known as the Di perimeter) in the Di
+Department of the Sourou Province. In this area, beneficiaries received land, land documentation, training
+in irrigated production, as well as support in managing the infrastructure through development of, and
+capacity building for, water user associations (WUAs).
+MCC engaged Mathematica as an independent evaluator to conduct a rigorous evaluation of MCC’s
+investments in the ADP.1
+ In the evaluation design report (Ksoll et al. 2017), Mathematica developed an
+evaluation design that seeks to answer four overarching questions: (1) What are the project impacts or—
+where a counterfactual is not available—outcomes in terms of beneficiaries’ land tenure, agricultural
+outcomes, and household incomes? (2) Are institutions developed by the project functioning and are
+project results sustainable? (3) What is the overall economic value of MCC’s investments? (4) How were
+the various components of the ADP implemented?
+This report presents the endline findings based on analysis of quantitative and qualitative data collected
+between February and August 2020, about five years after the end of the project. This final report focuses
+on MCC’s investment in the Di perimeter and addresses longer-term outcomes, economic assessment, and
+sustainability-related questions (questions 1, 2, and 3 above).2
+ The interim report (Ksoll et al. 2019)
+answered the implementation-related question (question 4 above) and assessed short- and medium-term
+outcomes hypothesized to lead to the project’s long-term goals for the Di perimeter and several smaller
+project activities. The analysis in the interim report concluded that the implementation of all activities was
+delayed but was generally completed by the end of the compact. For the incomplete activities, the ADP
+coordinated the support to beneficiaries through the post-compact entity. Outputs—ranging from farmer
+training and land tenure assistance to training and technical assistance (TA) for WUAs—were generally
+considered of good quality. The interim analysis also raised some questions about the sustainability of the
+Di perimeter, given low water user fee payment rates and low application of organic fertilizer.
+ER  - 
+
+TY  - GEN
+TI  - Where There’s a WUA, There’s a Way Using impact evaluations of an irrigation program in West Bengal to improve support for farmers
+AU  - Gardiner, Sophie
+AU  - Bhattacharyya, Sujoy
+AB  - Farmers of West Bengal remain among the poorest citizens of India, with 28% of rural households living below the
+national poverty line. One of the most fundamental challenges facing farmers in the state is a lack of water, to which
+the government has responded through widespread provision of minor irrigation structures (each covering less than
+2,000 hectares). However, the results of these irrigation interventions are mixed, with some estimating that up to
+50% of the traditional irrigation schemes in West Bengal are defunct. Even when the schemes are functioning
+properly, there is insufficient evidence of downstream increases in farmer income.
+We investigate the drivers of low agricultural income in West Bengal through an impact evaluation of the Accelerated
+Development of Minor Irrigation (ADMI) Project, a publicly provided minor irrigation program unique in its provision
+of agricultural support and local institution building in addition to infrastructure. The core of ADMI’s activities is the
+formation of a Water User Association (WUA), which acts as a nexus for collective action and the delivery of
+interventions. Drawing on economic theory, we present a simple conceptual framework that outlines how market
+and government failures can lead to six types of barriers to increasing farmer income. We then empirically investigate
+the causal impact of ADMI on these barriers through three quasi-experimental analyses of individual-level survey
+data and satellite imagery.
+We find that the ADMI package has substantial positive impacts on farmer welfare. Among functional schemes, ADMI
+has more than doubled farmers’ revenue from agriculture, providing them with an additional INR 28,275 (USD 382)
+in revenue per year. These findings are validated by satellite data. Analysis of intermediate outcomes suggests that
+the agricultural support services provided by ADMI are key to this impact: there is no statistically significant difference
+in revenue between farmers based on access to irrigation alone. The combination of irrigation availability and
+agricultural training is most impactful for farmers. The WUA played an important role in promoting the maintenance
+of the scheme and reducing the likelihood of lapses in irrigation availability: 76% of farmers report that the formation
+of a WUA led to better upkeep of the scheme.
+Based on these findings, we recommend that the Water Resources Department of West Bengal continue the ADMI
+program, leveraging the opportunity to scale in a structured fashion geared towards learning. Through ongoing
+piloting and nimble evaluation, the West Bengal government can refine the existing ADMI package and generate
+further impact by improving farmers’ connections to markets and the state’s social safety net.
+DA  - 2020///
+PY  - 2020
+ER  - 
+
